@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Items/Plants")]
-public class PlantData : ItemData
+[CreateAssetMenu(menuName = "Items/Seeds")]
+public class SeedData : ItemData
 {
     public Sprite seed;   
     [Header("Grow")]

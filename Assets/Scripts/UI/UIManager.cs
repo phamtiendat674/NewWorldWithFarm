@@ -13,6 +13,8 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         RenderInventory();
+        InventoryManager.Instance.itemHanding = 0;
+        RenderItemHanding(InventoryManager.Instance.itemHanding);
     }
     private void Awake()
     {
@@ -35,6 +37,20 @@ public class UIManager : MonoBehaviour
         {
             //Display them
             bagSlots[i].Display(inventoryToSlots[i]);
+        }
+    }
+    public void RenderItemHanding(int indexItemHanding)
+    {
+        for (int i = 0; i < bagSlots.Length; i++)
+        {
+            if (i == indexItemHanding)
+            {
+                bagSlots[i].DisplaySlotHanding(true);
+            }
+            else
+            {
+                bagSlots[i].DisplaySlotHanding(false);
+            }
         }
     }
 }

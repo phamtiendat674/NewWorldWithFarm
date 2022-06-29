@@ -23,6 +23,6 @@ public class InventoryManager : MonoBehaviour
     //items in bag
     public ItemData[] bag = new ItemData[10];
     //item using
-    public ItemData itemHanding;
+    public int itemHanding;
 
 }

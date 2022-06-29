@@ -17,6 +17,14 @@ public class BagSlot : MonoBehaviour
             this.itemToDisplay = itemToDisplay;
             itemDisplayImage.gameObject.SetActive(true);
         }
-        itemDisplayImage.gameObject.SetActive(false);
+        else
+        {
+            itemDisplayImage.gameObject.SetActive(false);
+        }  
     }
+    public void DisplaySlotHanding(bool cond)
+    {
+        gameObject.transform.GetChild(0).gameObject.SetActive(cond);
+    }
+
 }
