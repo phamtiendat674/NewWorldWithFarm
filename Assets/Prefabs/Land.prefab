@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4344741082912368444}
   - component: {fileID: 568660947428326286}
   m_Layer: 0
-  m_Name: Dirt
+  m_Name: Land
   m_TagString: Dirt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 243500e16525c6b4b9b0f613fda1f816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseIn: {fileID: 4964305706048781212}
 --- !u!1001 &8526556532606773634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -188,10 +187,5 @@ PrefabInstance:
 --- !u!4 &666666607512306942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9156961822152256892, guid: 870d6b3d813ed2142b6bc934b2081d42, type: 3}
-  m_PrefabInstance: {fileID: 8526556532606773634}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4964305706048781212 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3652604296906363422, guid: 870d6b3d813ed2142b6bc934b2081d42, type: 3}
   m_PrefabInstance: {fileID: 8526556532606773634}
   m_PrefabAsset: {fileID: 0}

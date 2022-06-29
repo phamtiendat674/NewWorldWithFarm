@@ -5,12 +5,12 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Items/Plants")]
 public class PlantData : ItemData
 {
-    [SerializeField] public Sprite seed;   
+    public Sprite seed;   
     [Header("Grow")]
-    [SerializeField] public GameObject phase1;
-    [SerializeField] public GameObject phase2;
-    [SerializeField] public GameObject phase3;
+    public GameObject phase1;
+    public GameObject phase2;
+    public GameObject phase3;
     [Header("Other Information")]
-    [SerializeField] public int hoursToGrow;
-    [SerializeField] public int earnFromIt;
+    public int hoursToGrow;
+    public int earnFromIt;
 }
