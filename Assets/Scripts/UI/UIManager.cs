@@ -30,11 +30,11 @@ public class UIManager : MonoBehaviour
     
     public void RenderInventory() // ship inventory to bag slot
     {
-        ItemData[] bagToSlots = InventoryManager.Instance.bag;
+        ItemData[] inventoryToSlots = InventoryManager.Instance.bag;
         for (int i = 0; i < bagSlots.Length; i++)
         {
             //Display them
-            bagSlots[i].Display(bagToSlots[i]);
+            bagSlots[i].Display(inventoryToSlots[i]);
         }
     }
 }
